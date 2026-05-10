@@ -13,6 +13,23 @@ import json
 
 app = FastAPI(title="Knowvation API")
 
+def get_docs(res):
+    docs = []
+    if isinstance(res, dict):
+        docs = res.get('documents', [])
+    elif hasattr(res, 'documents'):
+        docs = getattr(res, 'documents')
+    
+    final_docs = []
+    for d in docs:
+        if isinstance(d, dict):
+            final_docs.append(d)
+        elif hasattr(d, '__dict__'):
+            final_docs.append(d.__dict__)
+        else:
+            final_docs.append(d)
+    return final_docs
+
 # ─── Models ──────────────────────────────────────────────────────────────────
 
 class SourceJob(BaseModel):
@@ -66,7 +83,7 @@ async def get_source_jobs():
             database_id=DATABASE_ID,
             collection_id=SOURCE_JOBS_COLLECTION
         )
-        return response['documents']
+        return get_docs(response)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -106,7 +123,7 @@ async def get_recruiters():
             collection_id=SOURCE_JOBS_COLLECTION
         )
         recruiters = []
-        for doc in response['documents']:
+        for doc in get_docs(response):
             if doc.get("hr_name") or doc.get("hr_email"):
                 recruiters.append({
                     "id": doc["$id"],
@@ -165,7 +182,7 @@ async def get_analyzed_jobs():
             database_id=DATABASE_ID,
             collection_id=ANALYZED_JOBS_COLLECTION
         )
-        return response['documents']
+        return get_docs(response)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -176,7 +193,7 @@ async def get_reports_summary():
     """Returns aggregated analytics data for the reports dashboard."""
     try:
         jobs_resp = db.list_documents(DATABASE_ID, ANALYZED_JOBS_COLLECTION)
-        jobs = jobs_resp['documents']
+        jobs = get_docs(jobs_resp)
 
         # Skill demand
         skill_counts: dict = {}
@@ -223,7 +240,7 @@ async def export_csv():
     """Export all analyzed jobs as a CSV file download."""
     try:
         jobs_resp = db.list_documents(DATABASE_ID, ANALYZED_JOBS_COLLECTION)
-        jobs = jobs_resp['documents']
+        jobs = get_docs(jobs_resp)
 
         output = io.StringIO()
         writer = csv.writer(output)
@@ -260,7 +277,7 @@ async def export_excel():
         from openpyxl.utils import get_column_letter
 
         jobs_resp = db.list_documents(DATABASE_ID, ANALYZED_JOBS_COLLECTION)
-        jobs = jobs_resp['documents']
+        jobs = get_docs(jobs_resp)
 
         wb = openpyxl.Workbook()
         ws = wb.active
