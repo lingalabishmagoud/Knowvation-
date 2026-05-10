@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 python-dotenv
-appwrite
+appwrite==15.3.0
 playwright
 google-generativeai
 pandas
