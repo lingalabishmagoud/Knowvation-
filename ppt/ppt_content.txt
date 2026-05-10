@@ -1,0 +1,77 @@
+SLIDE 1: Title Slide
+Title: Knowvation - AI Hiring Intelligence Platform
+Subtitle: Python Full Stack Development Project Submission
+Presented By: [Your Name]
+Domain: Python Full Stack Development
+
+SLIDE 2: Project Overview
+Title: What is Knowvation?
+Bullet Points:
+- A full-stack AI-driven hiring intelligence web application.
+- Automates the extraction and analysis of job market trends.
+- Scrapes raw job data and uses Google Gemini AI for structured NLP analysis.
+- Provides recruiters with a dynamic 3D-inspired analytics dashboard.
+
+SLIDE 3: Problem Statement
+Title: The Problem We Are Solving
+Bullet Points:
+- Manual collection of job market data is slow and inefficient.
+- Hard to track competitor hiring trends in real-time.
+- Identifying highly demanded skills requires reading hundreds of descriptions.
+- Solution: An automated scraper + AI analysis pipeline to generate instant insights.
+
+SLIDE 4: Technology Stack
+Title: Technologies Used
+Bullet Points:
+- Frontend: Next.js, React, TailwindCSS, Recharts, Framer Motion
+- Backend: Python, FastAPI
+- Web Scraping: Playwright
+- AI Engine: Google Gemini API
+- Database & Auth: Appwrite
+
+SLIDE 5: System Architecture
+Title: How It Works
+Content:
+(You can insert the Architecture Diagram image here)
+- Flow: Frontend Client <-> FastAPI Backend <-> Appwrite Database
+- The backend triggers Playwright to scrape external job boards.
+- Scraped text is fed into the Gemini API.
+- The AI returns structured data (skills, trends) which is saved in Appwrite.
+- The frontend fetches this data to display interactive Recharts.
+
+SLIDE 6: Key Features
+Title: Features Implemented
+Bullet Points:
+- Secure User Authentication (Appwrite).
+- Automated Web Scraping (Playwright).
+- AI Job Description Analysis (Gemini).
+- Interactive Analytics Dashboard (Recharts/Chart.js).
+- Recruiter Intelligence Directory (HR Contact extraction).
+- Report Generation (CSV/Excel exports).
+
+SLIDE 7: The AI Pipeline
+Title: AI Data Extraction
+Bullet Points:
+- Input: Unstructured, messy job description text.
+- Processing: Prompt engineering with Gemini API.
+- Output: Standardized JSON format.
+- Extracted Fields: Role, Required Skills, Experience Level, Hiring Trend (Aggressive/Steady/Freeze), AI Confidence Score.
+
+SLIDE 8: Demo & Screenshots
+Title: Application Showcase
+Content:
+(Insert your application screenshots here)
+- Show the Dashboard with Charts.
+- Show the Mock Source Management page.
+- Show the Data Export feature.
+
+SLIDE 9: Conclusion
+Title: Conclusion & Future Scope
+Bullet Points:
+- Successfully built a scalable Python Full Stack application integrating Agentic AI.
+- Future Scope: Add real-time LinkedIn/Indeed scraping, implement email outreach automation for recruiters, and add predictive hiring algorithms.
+
+SLIDE 10: Q&A
+Title: Thank You!
+Subtitle: Questions?
+Footer: [Your GitHub Link] | [Your Email]

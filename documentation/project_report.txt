@@ -1,0 +1,41 @@
+PROJECT REPORT: Knowvation - AI Hiring Intelligence Web Application
+
+1. INTRODUCTION
+1.1 Project Title: Knowvation
+1.2 Domain: Python Full Stack Development
+1.3 Objective: To build a full-stack, AI-driven hiring intelligence platform that automates the extraction and analysis of job market trends, providing recruiters with actionable insights and a dynamic analytics dashboard.
+1.4 Problem Statement: The manual collection of hiring data and analysis of market trends is time-consuming and prone to human error. There is a need for an automated system to scrape job postings and use Natural Language Processing to extract intelligence such as in-demand skills and company hiring velocity.
+
+2. SYSTEM ARCHITECTURE
+2.1 Overview: The platform follows a decoupled client-server architecture. The client is a Next.js application, communicating via RESTful APIs with a Python FastAPI backend.
+2.2 Frontend: Built with Next.js, React, and TailwindCSS for a highly responsive, premium UI. Visualizations are powered by Recharts and Chart.js.
+2.3 Backend: Built with FastAPI for high-performance API endpoints. Playwright is used for automated web scraping, and the Google Gemini API handles the AI extraction logic.
+2.4 Database: Appwrite is used as a Backend-as-a-Service (BaaS) for both user authentication and NoSQL database storage.
+
+3. FEATURES IMPLEMENTED
+3.1 User Authentication: Secure user registration, login, and session management using Appwrite.
+3.2 Mock Job Source Panel: An administrative interface allowing the addition, modification, and deletion of mock job postings.
+3.3 Automated Web Scraping: Python-based script using Playwright to extract data from target job boards.
+3.4 AI Data Extraction: Integration of Gemini AI to parse raw job descriptions into structured JSON (Role, Skills, Experience, Hiring Trend, Intelligence Score).
+3.5 Analytics Dashboard: Interactive charts displaying tech stack demand, company hiring velocity, and active open roles.
+3.6 Export functionality: Allows users to download generated insights in CSV and Excel formats.
+
+4. TECHNOLOGY STACK
+- Frontend: Next.js, React, TailwindCSS, Framer Motion
+- Backend: Python 3.10, FastAPI, Uvicorn
+- Scraping: Playwright
+- AI Model: Google Gemini API
+- Database: Appwrite
+
+5. IMPLEMENTATION DETAILS
+5.1 Setup Process: Python virtual environment configured for the backend with `requirements.txt`. Node environment for the frontend using `npm`.
+5.2 Execution Flow: The user logs in -> navigates to the dashboard -> triggers a scrape operation -> backend uses Playwright to scrape -> backend sends data to Gemini -> structured data is saved to Appwrite -> frontend fetches data to populate Recharts.
+
+6. CHALLENGES AND SOLUTIONS
+- Challenge: Rendering dynamic charts with inconsistent data.
+- Solution: Standardized the AI output using structured prompting with the Gemini API to ensure a strict JSON schema.
+- Challenge: Rate limits with the Gemini API.
+- Solution: Implemented batch processing and error handling with automated retries.
+
+7. CONCLUSION
+Knowvation successfully demonstrates the integration of modern web technologies with Agentic AI applications. It serves as a robust proof-of-concept for automating recruitment intelligence.
