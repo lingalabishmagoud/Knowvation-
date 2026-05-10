@@ -32,12 +32,16 @@ async def run_scrape():
         except Exception as e:
             print(f"Failed to clear old jobs: {e}")
             
-        jobs = await scrape_jobs("http://localhost:3000/mock-jobs")
+        jobs = await scrape_jobs("https://lingalabishmagoud.github.io/Knowvation-/mock-jobs")
         status["total"] = len(jobs)
         print(f"Scraped {len(jobs)} jobs")
         
         for i, job in enumerate(jobs):
             print(f"\nProcessing Job {i+1}: {job['title']}")
+            if i > 0:
+                print("  [Wait] Delaying 4s to respect Gemini API rate limit...")
+                await asyncio.sleep(4)
+            
             analysis = extract_job_info(job['description'], job_title=job['title'])
             
             if analysis:

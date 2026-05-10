@@ -6,7 +6,7 @@ from playwright.async_api import async_playwright
 # 2. Use Playwright to visit the mock page for scraping demonstration purposes
 # This ensures we never get 0 jobs due to React hydration timing issues.
 
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://knowvation.onrender.com"
 
 async def scrape_jobs(url):
     """
@@ -148,7 +148,7 @@ async def _playwright_scrape(url):
 
 if __name__ == "__main__":
     async def test():
-        jobs = await scrape_jobs("http://localhost:3000/mock-jobs")
+        jobs = await scrape_jobs("https://lingalabishmagoud.github.io/Knowvation-/mock-jobs")
         print(f"\nTotal jobs scraped: {len(jobs)}")
         for j in jobs:
             print(f"  - {j['title']} @ {j['company']} | {j['location']} | HR: {j['hr_name']}")
