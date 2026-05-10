@@ -53,7 +53,7 @@ export default function AdminPage() {
   const fetchQuotaStatus = async () => {
     setTestingQuota(true);
     try {
-      const res = await fetch("http://localhost:8000/api/quota-status");
+      const res = await fetch("https://knowvation.onrender.com/api/quota-status");
       if (res.ok) setQuotaStatus(await res.json());
     } catch {}
     setTestingQuota(false);
@@ -62,7 +62,7 @@ export default function AdminPage() {
   const fetchAnalyzedJobs = async () => {
     setRefreshing(true);
     try {
-      const res = await fetch("http://localhost:8000/analytics/jobs");
+      const res = await fetch("https://knowvation.onrender.com/analytics/jobs");
       if (res.ok) {
         const data = await res.json();
         setAnalyzedJobs(data);
@@ -78,14 +78,14 @@ export default function AdminPage() {
 
   const fetchScrapeStatus = async () => {
     try {
-      const res = await fetch("http://localhost:8000/scrape-status");
+      const res = await fetch("https://knowvation.onrender.com/scrape-status");
       if (res.ok) setScrapeStatus(await res.json());
     } catch {}
   };
 
   const fetchSourceJobs = async () => {
     try {
-      const res = await fetch("http://localhost:8000/admin/source-jobs");
+      const res = await fetch("https://knowvation.onrender.com/admin/source-jobs");
       if (res.ok) {
         const data = await res.json();
         setSourceJobs(data);
@@ -96,7 +96,7 @@ export default function AdminPage() {
   const handleDeleteSourceJob = async (id: string) => {
     if (!confirm("Are you sure you want to delete this job?")) return;
     try {
-      const res = await fetch(`http://localhost:8000/admin/source-jobs/${id}`, { method: "DELETE" });
+      const res = await fetch(`https://knowvation.onrender.com/admin/source-jobs/${id}`, { method: "DELETE" });
       if (res.ok) {
         showNotification('success', "Job deleted successfully");
         fetchSourceJobs();
@@ -124,10 +124,10 @@ export default function AdminPage() {
     setScraping(true);
     showNotification('success', 'Scraper started! This may take a minute — do not refresh.');
     try {
-      const res = await fetch("http://localhost:8000/scrape", { method: "POST" });
+      const res = await fetch("https://knowvation.onrender.com/scrape", { method: "POST" });
       if (res.ok) {
         await fetchScrapeStatus();
-        const statusRes = await fetch("http://localhost:8000/scrape-status");
+        const statusRes = await fetch("https://knowvation.onrender.com/scrape-status");
         const status = statusRes.ok ? await statusRes.json() : null;
         if (status?.quota_warning) {
           showNotification('warning', status.message);
@@ -154,8 +154,8 @@ export default function AdminPage() {
     setLoading(true);
     try {
       const url = editingJobId
-        ? `http://localhost:8000/admin/source-jobs/${editingJobId}`
-        : "http://localhost:8000/admin/add-job";
+        ? `https://knowvation.onrender.com/admin/source-jobs/${editingJobId}`
+        : "https://knowvation.onrender.com/admin/add-job";
       const method = editingJobId ? "PUT" : "POST";
       const res = await fetch(url, {
         method,

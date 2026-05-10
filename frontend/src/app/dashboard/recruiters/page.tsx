@@ -17,7 +17,7 @@ export default function RecruitersPage() {
 
   useEffect(() => {
     account.get().catch(() => router.push("/login"));
-    fetch("http://localhost:8000/admin/recruiters")
+    fetch("https://knowvation.onrender.com/admin/recruiters")
       .then((r) => r.json())
       .then((data) => { setRecruiters(Array.isArray(data) ? data : []); })
       .catch(() => setRecruiters([]))

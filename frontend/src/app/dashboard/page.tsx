@@ -48,8 +48,8 @@ export default function DashboardPage() {
   useEffect(() => {
     account.get().catch(() => router.push("/login"));
     Promise.all([
-      fetch("http://localhost:8000/analytics/jobs").then(r => r.ok ? r.json() : []),
-      fetch("http://localhost:8000/admin/recruiters").then(r => r.ok ? r.json() : []),
+      fetch("https://knowvation.onrender.com/analytics/jobs").then(r => r.ok ? r.json() : []),
+      fetch("https://knowvation.onrender.com/admin/recruiters").then(r => r.ok ? r.json() : []),
     ]).then(([jobsData, recruitersData]) => {
       setJobs(Array.isArray(jobsData) ? jobsData : []);
       setRecruiters(Array.isArray(recruitersData) ? recruitersData : []);

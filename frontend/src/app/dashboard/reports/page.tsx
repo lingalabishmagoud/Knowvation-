@@ -28,7 +28,7 @@ export default function ReportsPage() {
   const fetchSummary = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8000/reports/summary");
+      const res = await fetch("https://knowvation.onrender.com/reports/summary");
       if (res.ok) setSummary(await res.json());
     } catch {}
     setLoading(false);
@@ -38,7 +38,7 @@ export default function ReportsPage() {
     setDownloading(format);
     try {
       const endpoint = format === "csv" ? "/reports/export/csv" : "/reports/export/excel";
-      const res = await fetch(`http://localhost:8000${endpoint}`);
+      const res = await fetch(`https://knowvation.onrender.com${endpoint}`);
       if (res.ok) {
         const blob = await res.blob();
         const url = URL.createObjectURL(blob);

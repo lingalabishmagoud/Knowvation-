@@ -29,7 +29,7 @@ export default function Register() {
       // Automatically log them in after registration
       await account.createEmailPasswordSession(email, password);
       // Send verification email
-      await account.createVerification("http://localhost:3000/verify");
+      await account.createVerification("https://lingalabishmagoud.github.io/Knowvation-/verify");
       router.push("/admin"); // Redirect to dashboard, which will now demand verification
     } catch (error: any) {
       if (error.message.includes("session is active")) {
