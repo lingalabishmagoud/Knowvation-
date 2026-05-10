@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: knowvation-api
+    env: python
+    region: ohio
+    rootDir: backend
+    buildCommand: "bash ./build.sh"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
+      - key: APPWRITE_ENDPOINT
+        sync: false
+      - key: APPWRITE_PROJECT_ID
+        sync: false
+      - key: APPWRITE_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

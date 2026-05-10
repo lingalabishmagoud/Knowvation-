@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-dotenv
+appwrite
+playwright
+google-generativeai
+pandas
+python-multipart
+openpyxl
