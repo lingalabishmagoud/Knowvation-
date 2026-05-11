@@ -143,7 +143,7 @@ async def get_recruiters():
 # ─── Scraper ──────────────────────────────────────────────────────────────────
 
 @app.post("/scrape")
-async def trigger_scrape():
+def trigger_scrape():
     import subprocess
     import os
     try:

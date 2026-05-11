@@ -16,29 +16,30 @@ async def scrape_jobs(url):
     """
     print(f"[Scraper] Fetching source jobs from backend API...")
 
-    # ── Primary: Direct API fetch (100% reliable, no timing issues) ───────────
     try:
-        import urllib.request, json
-        req = urllib.request.urlopen(f"{BACKEND_URL}/admin/source-jobs", timeout=10)
-        raw = req.read().decode("utf-8")
-        source_docs = json.loads(raw)
+        from database import db, DATABASE_ID, SOURCE_JOBS_COLLECTION
+        response = db.list_documents(
+            database_id=DATABASE_ID,
+            collection_id=SOURCE_JOBS_COLLECTION
+        )
         
-        if not isinstance(source_docs, list):
-            source_docs = []
+        # Handle Appwrite response safely
+        source_docs = response.get('documents', []) if isinstance(response, dict) else getattr(response, 'documents', [])
         
-        print(f"[Scraper] Got {len(source_docs)} jobs from API")
+        print(f"[Scraper] Got {len(source_docs)} jobs from Database")
         
         jobs = []
         for doc in source_docs:
+            d = doc if isinstance(doc, dict) else doc.__dict__
             jobs.append({
-                "title":       doc.get("title", ""),
-                "company":     doc.get("company", ""),
-                "description": doc.get("description", ""),
-                "location":    doc.get("location", ""),
-                "hr_name":     doc.get("hr_name", ""),
-                "hr_email":    doc.get("hr_email", ""),
-                "hr_linkedin": doc.get("hr_linkedin", ""),
-                "hr_contact":  doc.get("hr_contact", ""),
+                "title":       d.get("title", ""),
+                "company":     d.get("company", ""),
+                "description": d.get("description", ""),
+                "location":    d.get("location", ""),
+                "hr_name":     d.get("hr_name", ""),
+                "hr_email":    d.get("hr_email", ""),
+                "hr_linkedin": d.get("hr_linkedin", ""),
+                "hr_contact":  d.get("hr_contact", ""),
             })
         
         # ── Secondary: Playwright verification pass (shows scraping is real) ──
@@ -47,7 +48,7 @@ async def scrape_jobs(url):
         return jobs
 
     except Exception as e:
-        print(f"[Scraper] API fetch failed: {e}. Falling back to Playwright...")
+        print(f"[Scraper] DB fetch failed: {e}. Falling back to Playwright...")
         return await _playwright_scrape(url)
 
 
@@ -64,13 +65,13 @@ async def _playwright_verify(url, expected_count):
             print(f"[Playwright] Visiting {url} for verification...")
             await page.goto(url, wait_until="networkidle", timeout=30000)
             
-            # Wait for React to render job cards
+            # Wait for React to render job cards (shorter timeout to avoid hanging)
             try:
-                await page.wait_for_selector(".job-card", timeout=15000)
+                await page.wait_for_selector(".job-card", timeout=8000)
                 found = await page.query_selector_all(".job-card")
                 print(f"[Playwright] Confirmed {len(found)} job cards visible on mock board (expected {expected_count})")
             except:
-                print(f"[Playwright] Could not confirm job cards — page may still be loading. Continuing with API data.")
+                print(f"[Playwright] Could not confirm job cards — page may still be loading. Continuing with DB data.")
             
             await browser.close()
     except Exception as e:
