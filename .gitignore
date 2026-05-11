@@ -24,3 +24,9 @@ env/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Large media files (share via Google Drive instead)
+demo_video/*.mp4
+demo_video/*.mov
+demo_video/*.avi
+demo_video/*.mkv
