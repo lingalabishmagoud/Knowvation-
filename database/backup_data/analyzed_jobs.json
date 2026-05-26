@@ -1,0 +1,306 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "company": "xyz",
+    "skills": [
+      "Python",
+      "AI"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 56,
+    "raw_description": "andriod dev, tester , java full stack , ai llms",
+    "location": "India (Location TBD)",
+    "hr_name": "HR Team",
+    "hr_email": "hr@xyz.com",
+    "hr_linkedin": "",
+    "hr_contact": "",
+    "_original_id": "d77e695d-15ca-4f72-86d9-2f643e76090a"
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "xyz soluntons",
+    "skills": [
+      "Python"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 53,
+    "raw_description": "python devloper and python full stack , and dsa \nbtech undergradtes of 27,26,25 are egilble ",
+    "location": "India (Location TBD)",
+    "hr_name": "HR Team",
+    "hr_email": "hr@xyzsoluntons.com",
+    "hr_linkedin": "",
+    "hr_contact": "",
+    "_original_id": "4bcabf1e-510f-45dc-b6c4-c39f88f8e7e9"
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "Tech Solutions Inc",
+    "skills": [
+      "React",
+      "Next.js",
+      "AI"
+    ],
+    "experience": "4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 84,
+    "raw_description": "We are urgently looking for a Senior React developer with 4 years of experience. Must know Next.js, Appwrite, and Tailwind. Fast-paced startup environment.",
+    "location": "India (Location TBD)",
+    "hr_name": "HR Team",
+    "hr_email": "hr@techsolutionsinc.com",
+    "hr_linkedin": "",
+    "hr_contact": "",
+    "_original_id": "23628001-5be3-4801-a1e5-cac1ac65df9f"
+  },
+  {
+    "role": "testing role",
+    "company": "testingg soltions",
+    "skills": [
+      "Communication",
+      "Problem Solving"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 56,
+    "raw_description": "testingg , automation testion, sekinum testing, security testing",
+    "location": "India (Location TBD)",
+    "hr_name": "HR Team",
+    "hr_email": "hr@testinggsoltions.com",
+    "hr_linkedin": "",
+    "hr_contact": "",
+    "_original_id": "c5f062d0-7d5c-4b97-b956-d8c2b678475a"
+  },
+  {
+    "role": "Frontend Developer",
+    "company": "bishma solutions",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "PostgreSQL",
+      "MySQL",
+      "Git",
+      "GitHub"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 70,
+    "raw_description": "Web Developer responsible for designing, developing, and maintaining responsive websites and web applications using technologies like HTML, CSS, JavaScript, React, Python/Node.js, and PostgreSQL/MySQL. Skilled in front-end and back-end development, API integration, database management, debugging, performance optimization, and ensuring website security. Experienced with Git/GitHub, responsive design, and collaborative development practices with strong problem-solving, communication, and teamwork skills.",
+    "location": "India (Location TBD)",
+    "hr_name": "HR Team",
+    "hr_email": "hr@bishmasolutions.com",
+    "hr_linkedin": "",
+    "hr_contact": "",
+    "_original_id": "ad778f52-bad7-461a-9367-09d6189b8377"
+  },
+  {
+    "role": "Full Stack Developer",
+    "company": "NexaTech Solutions",
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "React.js",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "PostgreSQL",
+      "MongoDB",
+      "Git"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 80,
+    "raw_description": "We are looking for a Full Stack Developer responsible for developing and maintaining scalable web applications using modern front-end and back-end technologies. The candidate should have experience with HTML, CSS, JavaScript, React.js, Node.js/Python, REST APIs, and databases like PostgreSQL or MongoDB. Responsibilities include designing responsive UI, API integration, debugging, performance optimization, version control using Git/GitHub, and collaborating with cross-functional teams to deliver high-quality software solutions.",
+    "location": "Hyderabad, India / Remote",
+    "hr_name": "Priya Sharma",
+    "hr_email": "priya.sharma@nexatech.com",
+    "hr_linkedin": "https://linkedin.com/in/priya-sharma-tech",
+    "hr_contact": "+91 9876543210",
+    "_original_id": "0eb7ab19-457f-42bc-90b2-57ad45b9f44b"
+  },
+  {
+    "role": "UI/UX Designer",
+    "company": "PixelCraft Studios",
+    "skills": [
+      "AI",
+      "Figma",
+      "Adobe XD"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 69,
+    "raw_description": "We are seeking a creative UI/UX Designer to design intuitive and visually appealing user interfaces for web and mobile applications. The candidate should have experience with Figma, Adobe XD, wireframing, prototyping, user research, and responsive design principles. Responsibilities include creating user-centered designs, improving user experience, collaborating with developers and stakeholders, conducting usability testing, and maintaining design consistency across products.",
+    "location": "Bengaluru, India / Hybrid",
+    "hr_name": "Rahul Mehta",
+    "hr_email": "rahul.mehta@pixelcraft.com",
+    "hr_linkedin": "https://linkedin.com/in/rahul-mehta-uiux",
+    "hr_contact": "+91 9123456780",
+    "_original_id": "26e81621-02f1-4616-b504-081b297be693"
+  },
+  {
+    "role": "Cyber Security Analyst",
+    "company": "SecureNet Technologies",
+    "skills": [
+      "SIEM",
+      "Penetration Testing",
+      "Firewalls",
+      "Network Security",
+      "Vulnerability Assessment"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 65,
+    "raw_description": "We are hiring a Cyber Security Analyst to monitor, analyze, and protect organizational systems and networks from cyber threats and vulnerabilities. The candidate should have knowledge of network security, SIEM tools, penetration testing, firewalls, vulnerability assessment, incident response, and security compliance standards. Responsibilities include monitoring security alerts, identifying threats, implementing security measures, conducting risk assessments, and ensuring data protection across systems and applications.",
+    "location": "Pune, India / Remote",
+    "hr_name": "Sneha Reddy",
+    "hr_email": "sneha.reddy@securenet.com",
+    "hr_linkedin": "https://linkedin.com/in/sneha-reddy-cyber",
+    "hr_contact": "+91 9988776655",
+    "_original_id": "104dff88-77e6-488c-8a98-8c6091eeaafe"
+  },
+  {
+    "role": "DevOps Engineer",
+    "company": "CloudSync Systems",
+    "skills": [
+      "AWS",
+      "Azure",
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "CI/CD",
+      "Terraform",
+      "Ansible",
+      "Linux",
+      "Git"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 80,
+    "raw_description": "We are looking for a DevOps Engineer responsible for automating deployment pipelines, managing cloud infrastructure, and improving system reliability. The candidate should have experience with Docker, Kubernetes, CI/CD pipelines, Linux, AWS/Azure, Jenkins, Git, and infrastructure automation tools like Terraform or Ansible. Responsibilities include monitoring system performance, automating workflows, managing cloud resources, ensuring application scalability, and collaborating with development and operations teams.",
+    "location": "Chennai, India / Remote",
+    "hr_name": "Arjun Verma",
+    "hr_email": "arjun.verma@cloudsync.com",
+    "hr_linkedin": "https://linkedin.com/in/arjun-verma-devops",
+    "hr_contact": "+91 9012345678",
+    "_original_id": "8f94ca93-4b65-45f2-94ec-0a88fd32b5fa"
+  },
+  {
+    "role": "Software Tester",
+    "company": "QualitySoft Labs",
+    "skills": [
+      "Selenium",
+      "Agile"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 66,
+    "raw_description": "We are seeking a Software Tester/QA Engineer to ensure the quality and performance of web and mobile applications through manual and automated testing. The candidate should have experience with test case creation, bug tracking, Selenium, API testing, regression testing, and Agile methodologies. Responsibilities include identifying bugs, validating software functionality, preparing test reports, collaborating with developers, and ensuring software meets business and technical requirements.",
+    "location": "Mumbai, India / Hybrid",
+    "hr_name": "Kavya Nair",
+    "hr_email": "kavya.nair@qualitysoft.com",
+    "hr_linkedin": "https://linkedin.com/in/kavya-nair-qa",
+    "hr_contact": "+91 9345678901",
+    "_original_id": "736aa81f-9f7e-422e-8413-e279738c1e58"
+  },
+  {
+    "role": "senior c++ programmar",
+    "company": "knowvation",
+    "skills": [
+      "Communication",
+      "Problem Solving"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 56,
+    "raw_description": "required skills in the c++, understamnding of the oops concept etc ",
+    "location": "hyderabad, india",
+    "hr_name": "rahul",
+    "hr_email": "rahul@knowvation.in",
+    "hr_linkedin": "https://knowvationlearnings-my.sharepoint.com/:w:/g/personal/rohit_t_knowvationlearnings_in/IQAAK5uOIIm9R6YYlFv9dO14AUxGIOqher1c9H_ow1awhvw?rtime=eWfeAV-u3kg",
+    "hr_contact": "8892925552",
+    "_original_id": "96612b77-2492-479d-9a40-c31c19177f97"
+  },
+  {
+    "role": "IT Project Manager",
+    "company": "Innovexa Technologies",
+    "skills": [
+      "AI",
+      "Agile",
+      "Scrum"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 69,
+    "raw_description": "We are looking for an experienced IT Project Manager to lead and manage software development projects from planning to deployment. The candidate should have strong knowledge of project management methodologies, Agile/Scrum practices, team coordination, risk management, budgeting, and client communication. Responsibilities include defining project scope, managing timelines, coordinating cross-functional teams, tracking project progress, ensuring timely delivery, resolving project risks, and maintaining effective communication with stakeholders and clients.",
+    "location": "Hyderabad, India / Hybrid",
+    "hr_name": "Neha Kapoor",
+    "hr_email": "neha.kapoor@innovexa.com",
+    "hr_linkedin": "https://linkedin.com/in/neha-kapoor-pm",
+    "hr_contact": "+91 9876012345",
+    "_original_id": "09bca7cc-ac33-4e46-ba63-a3ef652db867"
+  },
+  {
+    "role": "Database Administrator",
+    "company": "Innovexa Technologies",
+    "skills": [
+      "PostgreSQL",
+      "MySQL",
+      "AI"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 69,
+    "raw_description": "We are seeking a Database Administrator (DBA) responsible for managing, monitoring, and maintaining organizational databases to ensure performance, security, and reliability. The candidate should have experience with MySQL, PostgreSQL, SQL Server, database backup and recovery, query optimization, database security, and performance tuning. Responsibilities include installing and configuring databases, monitoring database health, managing user access, optimizing queries, ensuring data integrity, performing backups, and supporting development teams with database-related tasks.",
+    "location": "Hyderabad, India / Hybrid",
+    "hr_name": "Neha Kapoor",
+    "hr_email": "neha.kapoor@innovexa.com",
+    "hr_linkedin": "https://linkedin.com/in/neha-kapoor-pm",
+    "hr_contact": "+91 9876012345",
+    "_original_id": "f8da39b3-7aa1-4c24-9f17-0eb4dae53f33"
+  },
+  {
+    "role": "DevOps Engineer",
+    "company": "SkyWave Technologies",
+    "skills": [
+      "AWS",
+      "Azure",
+      "GCP",
+      "Docker",
+      "Kubernetes",
+      "Linux",
+      "AI"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Steady",
+    "intelligence_score": 70,
+    "raw_description": "We are hiring a Cloud Engineer to design, deploy, and maintain scalable cloud infrastructure and services. The candidate should have experience with AWS/Azure/GCP, virtualization, cloud security, Linux administration, networking, Docker, Kubernetes, and infrastructure automation tools. Responsibilities include managing cloud resources, monitoring system performance, optimizing infrastructure costs, implementing security best practices, automating deployments, and supporting development teams in cloud-based application deployment and maintenance.",
+    "location": "Bengaluru, India / Remote",
+    "hr_name": "Aditya Rao",
+    "hr_email": "aditya.rao@skywave-tech.com",
+    "hr_linkedin": "https://linkedin.com/in/aditya-rao-cloud",
+    "hr_contact": "+91 9765432108",
+    "_original_id": "71a3e1ea-a611-4a18-8b9c-c214bf3e26d0"
+  },
+  {
+    "role": "Business Analyst",
+    "company": "VisionCore Solutions",
+    "skills": [
+      "Agile"
+    ],
+    "experience": "2-4 years",
+    "hiring_trend": "Moderate",
+    "intelligence_score": 63,
+    "raw_description": "We are looking for a Business Analyst to analyze business requirements and bridge the gap between stakeholders and technical teams. The candidate should have strong analytical, communication, and documentation skills along with knowledge of Agile methodologies, requirement gathering, process modeling, and data analysis tools. Responsibilities include gathering client requirements, preparing functional documents, analyzing business processes, coordinating with development teams, conducting stakeholder meetings, and ensuring successful delivery of business solutions.",
+    "location": "Pune, India / Hybrid",
+    "hr_name": "Rithika Sen",
+    "hr_email": "rithika.sen@visioncore.com",
+    "hr_linkedin": "https://linkedin.com/in/rithika-sen-ba",
+    "hr_contact": "+91 9654321870",
+    "_original_id": "91c645f9-6efb-422a-b9d4-52cc31ae453d"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "backup_time": "2026-05-26T17:56:41.797408",
+  "project_id": "69fde9920010a87547f3",
+  "database_id": "hiring_intelligence",
+  "collections": {
+    "source_jobs": {
+      "document_count": 15
+    },
+    "analyzed_jobs": {
+      "document_count": 15
+    },
+    "companies": {
+      "document_count": 0
+    }
+  }
+}
